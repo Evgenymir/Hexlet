@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // const reverse = (str) => {
+        //     let result = "";
+        //     let i = str.length - 1;
+        //     console.log(i);
+        //     while (i >= 0) {
+        //         result = `${result}${str[i]}`;
+        //         i -= 1;
+        //     }
+
+        //     return result;
+        // };
+
+        // console.log(reverse('cat'));
+
+        // const sum = (sum) => {
+        //     let sumResult = 0;
+            
+        //     for(let j = 0; j < sum.length; j += 1) {
+        //         sumResult = sumResult + Number(sum[j]);
+        //     }
+        //     return sumResult;
+        // };
+
+        // const addDigits = (num) => {
+        //     let result = 0;
+        //     let numString = String(num).substring(0, 4);
+            
+
+        //     for(let i = 0; i < numString.length; i += 1) {
+        //         result = result + Number(numString[i]);
+        //     }
+        //     return sum(String(result));
+        // };
+
+        // console.log(addDigits(999999999999));
+
+        // const changeToCapitalLetter = (str) => {
+        //     let result = '';
+        //     result += str[0].toUpperCase();
+
+        //     for (let i = 1; i <= str.length - 1 ; i += 1) {
+        //         if(str[i - 1] === ' ') {
+        //             result += str[i].toUpperCase();
+        //         } else {
+        //             result += str[i];
+        //         }
+        //     }
+
+        //     console.log(result);
+        // };
+
+        // changeToCapitalLetter('  many different words inside sentence  ');
+
+        // const solution = (a, b, c) => {
+        //     const sinB = Math.sin(radian(b));
+        //     const sinC = Math.sin(radian(c));
+        //     const aSquare = a ** 2;
+        //     const sinZ = Math.sin(Math.PI - radian(b + c));
+        //     return (aSquare * (sinB * sinC) / sinZ) / 2;
+            
+        // };
+
+        // const radian = (num) => {
+        //     return num * Math.PI / 180;
+        // };
+
+        // console.log(solution(3, 60, 60));
+
+        // const check = (a, b, c, d) => {
+        //     if (a === c && b === d) {
+        //         return 2;
+        //     } else if ((a < b && c < d) || (a > b && c > d) || (a === b && c === d) ) {
+        //         return 1
+        //     }
+
+        //     return 0;
+        // };
+
+        // console.log(check(2, 2, 1, 2));
+
+        // const smallestDivisor = (num) => {
+        //     const iter = (acc) => {
+        //         if (acc > num / 2) {
+        //             return num;
+        //         }
+        //         if (num % acc === 0) {
+        //             return acc;
+        //         }
+        //         return iter(acc + 1);
+        //     };
+
+        //     return iter(2);
+        // };
+
+        // console.log(smallestDivisor(15));
+
+        // const smallestDivisor = (num) => {
+        //     if (num < 1) {
+        //         return NaN;
+        //     }
+        //     let i = 2;
+        //     while(i <= num) {
+        //         if (num % i === 0) {
+        //             return i;
+        //         }
+        //         i = i + 1;
+        //     }
+        // };
+
+        // console.log(smallestDivisor(15));
+
+        // const gcd = (m, n) => {
+        //     let i = m;
+        //     while(m % i !== 0 || n % i !== 0) {
+        //         i = i - 1;
+        //     }
+        //     return i;
+        // };
+        // console.log(gcd(2, 3));
+
+        // const isPrime = (num) => {
+        //     if (num < 2) return false;
+        //     for (let i = 2; i < num; i++) {
+        //         if (num % i === 0) {
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // };
+        // export default isPrime;
+
+        // const sum = (num, a, b) => {
+        //     let result = 0;
+        //     for (let i = num -1; i >= 1; i--) {
+        //         if (i % a === 0 || i % b === 0) {
+        //             console.log(i);
+        //             result += i;
+        //         }
+        //     }
+        //     return result;
+        // };
+
+        // console.log(sum(10, 2, 4));
+
+        // const reverse = (str) => {
+        //     let result = '';
+        //     for (let i = str.length - 1; i >= 0; i--) {
+        //         console.log(i);
+        //         result += str[i];
+        //     }
+        //     return result;
+        // };
+
+        // console.log(reverse('cat'));
+        
+        // Switch
+        // const calc = (operand, num1, num2) => {
+        //     switch (operand) {
+        //         case '+':
+        //             return num1 + num2;
+        //         case '-':
+        //             return num1 - num2;
+        //         case '*':
+        //             return num1 * num2;
+        //         case '/':
+        //             return num1 / num2;
+        //         default:
+        //             return NaN;
+        //     }
+        // };
+
+        // console.log(calc('+', 3, 10));
+
+        // const solution = (str) => {
+        //     let result = '';
+        //     result += str[0].toUpperCase();
+        //     for (let i = 1; i <= str.length - 1; i += 1) {
+        //         if (str[i - 1] === ' ') {
+        //             result += str[i].toUpperCase();
+        //         } else {
+        //             result += str[i];
+        //         }
+        //     }
+        //     return result;
+        // };
+        // console.log(solution('  hello,   world!'));
+
+        // const addDigits = (num) => {
+        //     if (num < 10) return num;
+
+        //     const numString = String(num).slice(0, 4);
+        //     let firstResult = 0;
+            
+        //     for (let i = 0; i < numString.length; i++) {
+        //         firstResult += Number(numString[i]);
+        //     }
+            
+        //     const numStringTwo = String(firstResult);
+        //     let currentResult = 0;
+
+        //     for (let i = 0; i < numStringTwo.length; i++) {
+        //         currentResult += Number(numStringTwo[i]);
+        //     }
+
+        //     return currentResult;
+        // };
+        // console.log(addDigits(598997686567));
+        
+
+
+        // Испытания
+
+        // Переворот чиста
+        // const reverseInt = (num) => {
+        //     const str = String(num);
+        //     let result = '';
+        //     for(let i = 0; i < str.length - 1 ; i++) {
+        //         if (str[i] === '-') {
+        //             result = result + str[0];
+        //         }
+        //     }
+
+        //     for (let i = str.length - 1; i >= 0 ; i--) {
+        //         str[i] === '0' || str[i] === '-' ? result += '' : result += str[i];
+        //     }
+        //     return result;
+        // };
+
+        // console.log(reverseInt(-123));
+
+        // Инвертированный регистр
+        // const invertCase = (str) => {
+        //     let result = '';
+
+        //     for (let i = 0; i < str.length; i++) {
+        //         str[i].toUpperCase() === str[i] ? result += str[i].toLowerCase() 
+        //                                         : result += str[i].toUpperCase();
+        //     }
+
+        //     return result;
+        // };
+        // console.log(invertCase('Hello, World!'));
+        // console.log(invertCase('I loVe JS'));
+
+        // Преобразование DNA в RNA
+        // const dnaToRna = (str) => {
+        //     if (str.length === 0) return '';
+        //     let result = '';
+
+        //     for (let i = 0; i < str.length; i++) {
+        //         if (str[i] === 'A') {
+        //             result += 'U';
+        //         } else if (str[i] === 'C') {
+        //             result += 'G';
+        //         } else if (str[i] === 'G') {
+        //             result += 'C';
+        //         } else if (str[i] === 'T') {
+        //             result += 'A';
+        //         } else {
+        //             return null;
+        //         }
+        //     }
+
+        //     return result;
+        // };
+
+        // console.log(dnaToRna('ACGTGGTCTTAA'));
+        // console.log(dnaToRna('CCGTA'));
+        // console.log(dnaToRna(''));
+        // console.log(dnaToRna('ACNTG'));
+
+        // Степень тройки
+        // const isPowerOfThree = (num) => {
+        //     let isBool = false;
+        //     for (let i = 0; i < num; i++) {
+        //         let result = 3 ** i;
+        //         if (result === num) {
+        //             isBool = true;
+        //         }
+        //     }
+        //     return isBool;
+        // };
+        // // console.log(isPowerOfThree(1));
+        // // console.log(isPowerOfThree(3));
+
+        //Разница углов
+        // const diff = (angle1, angle2) => {
+        //     const sum = (angle1 < angle2) ? angle2 - angle1 : angle1 - angle2;
+        //     const sumDiff = 360 - sum;
+        //     return sum >= sumDiff ? sumDiff : sum;
+        // };
+
+        // console.log(diff(225, 0));
+        
+        // Идеальные числа
+        // const isPerfect = (num) => {
+        //     let result = 0;
+        //     for (let i = 1; i < num; i++) {
+        //         if (num % i === 0) {
+        //             result += i;
+        //         }
+        //     }
+        //     return result === num;
+        // };
+
+        // console.log(isPerfect(0));
+        
+        // Сумма квадратов
+        // const sumSquareDifference = (num) => {
+        //     let sumSquare = 0;
+        //     let squareSum = 0;
+        //     for (let i = 0; i <= num; i += 1) {
+        //         sumSquare += i * i;
+        //         squareSum += i;
+        //     }
+
+        //     return (squareSum * squareSum) - sumSquare;
+        // };
+
+        // console.log(sumSquareDifference(5));
+
+        // Счастливые числа
+        // const sumOfSquareDigits = (num) => {
+        //     const numAsStr = String(num);
+        //     let sum = 0;
+        //         for (let i = 0; i < numAsStr.length; i += 1) {
+        //             const digit = Number(numAsStr[i]);
+        //             sum += digit * digit;
+        //         }
+
+        //     return sum;
+        // };
+
+        // const isHappyNumber = (num) => {
+        //     let numStr = String(sumOfSquareDigits(num));
+        //     let result = 0;
+            
+        //     for (let i = 0; i < numStr.length; i += 1) {
+        //         result += sumOfSquareDigits(numStr[i]);
+        //     }
+        //     if (String(result).length > 1) {
+        //         isHappyNumber(result);
+        //     }
+        //     console.log(result);
+        //     return result === 1 ? true : false;
+        // };
+
+        // console.log(isHappyNumber(7));
+
+        // Найди Fizz Buzz
+        // const fizzBuzz = (begin, end) => {
+        //     if (begin > end) {
+        //         return;
+        //     }
+
+        //     for (let i = begin; i <= end; i++) {
+        //         if (i % 3 === 0 && i % 5 === 0) {
+        //             console.log('FizzBuzz');
+        //         } else if (i % 5 === 0) {
+        //             console.log('Buzz');
+        //         } else if (i % 3 === 0) {
+        //             console.log('Fizz');
+        //         } else {
+        //             console.log(i);
+        //         }
+        //     }
+        // };
+
+        // fizzBuzz(11, 20);
+
+        // Переворот строки
+        // const reverse = (str) => {
+        //     const strNumber = str.length;
+        //     if (strNumber === 0) {
+        //         return str;
+        //     }
+        //     return str[strNumber - 1] + reverse(str.substr(0, strNumber - 1));
+        // };
+        // console.log(reverse('str'));
+
+        // Счастливый билет
+        // const isHappy = (str) => {
+        //     const half = str.length / 2;
+        //     let firstResult = 0;
+        //     let secondResult = 0;
+        //     for (let i = 0; i <= half - 1; i += 1) {
+        //         firstResult += Number(str[i]);
+        //     }
+        //     for (let j = str.length - 1; j >= half; j -= 1) {
+        //         secondResult += Number(str[j]);
+        //     }
+        //     return String(firstResult) === String(secondResult) ? true : false;
+        // };
+        // console.log(isHappy('00'));
+
+        // Форматированное время
+        // const formattedTime = (m) => {
+        //     const oneHour = 60;
+        //     let hour = Math.floor(m / oneHour);
+        //     let minutes = m % oneHour;
+        //     if (hour < 10) {
+        //         hour = `0${hour}`;
+        //     }
+        //     if (minutes < 10) {
+        //         minutes = `0${minutes}`;
+        //     }
+        //     return `${hour}:${minutes}`;
+        // };
+        // console.log(formattedTime(175));
+
+        // Сбалансированы ли скобки
+        // const areBracketsBalanced = (str) => {
+        //     if (str === '') {
+        //         return true;
+        //     }
+        //     let counter = 0;
+        //     for (let i = 0; i < str.length; i += 1) {
+        //         if (str[i] === '(') {
+        //             counter += 1;
+        //         }
+        //         if (str[i] === ')') {
+        //             counter -= 1;
+        //         }
+
+        //         if (counter < 0) {
+        //             return false;
+        //         }
+        //     }
+
+        //     if (counter !== 0) {
+        //         return false;
+        //     }
+
+        //     return true;
+            
+        // };
+        // console.log(areBracketsBalanced('(())'));
+
+        const withoutTwoZeros = (zeros, ones) => {
+        	//принимает на вход два аргумента - количество нулей и количество единиц
+            
+        	let numberOfZeros = '';
+        	for (let i = 1; i <= zeros; i += 1) {
+        		numberOfZeros += '0';
+        	}
+            
+        	let numberOfOnes = '';
+        	for (let i = 1; i <= ones; i += 1) {
+        		numberOfOnes += '1';
+        	}
+            
+            
+        	const concatenation = numberOfZeros + numberOfOnes;
+        	const length = numberOfZeros.length + numberOfOnes.length;
+            
+            
+        	const Cnk = (n, k) => {
+        		const factorial = (n) => {
+                    const iter = (counter, acc) => {
+                        if (counter === 1) {
+                            return acc;
+                        }
+                        return iter(counter - 1, counter * acc);
+                    }
+          	    return iter(n, 1);
+        	    };	
+                
+        		const out = factorial(n) / (factorial(k) * factorial(n - k));
+
+        		return out;
+        	};
+            
+        	while (true) {
+        		if (concatenation === '00') {
+        			return "";
+        		} else {
+        			return Cnk(length, zeros); // Всего возможных перестановок
+        		}
+        	}
+        };
+
+        //return factorial(o + 1) / (factorial(z) * factorial((o + 1) - z));
+        // нужно получить все комбинакии и потом исключать 
+
+        console.log(withoutTwoZeros(2, 2)); // 3
+        console.log("--------------------------")
+        console.log(withoutTwoZeros(1, 1)); // 2
+        console.log("--------------------------")
+        console.log(withoutTwoZeros(1, 3)), // 4
+        console.log("--------------------------")
+        console.log(withoutTwoZeros(2, 4)); // 10
+        console.log("--------------------------")
+
+    </script>
+</body>
+</html>

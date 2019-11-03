@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // JS функции. Guard Expression
+        // const isPalindrome = (str) => {
+        //     if (str.length < 2) {
+        //         return true;
+        //     }
+        //     const len = str.length - 1;
+
+        //     if (str[0] === str[len]) {
+        //         return isPalindrome(str.substring(1, len))
+        //     }
+
+        //     return false;
+        // };
+        // console.log(isPalindrome('abs'));
+
+        // JS функции. Параметры по умолчанию
+        // const substr = (str, num1 = 0, num2 = str.length) => {
+        //     if (num1 < 0) {
+        //         num1 = 0;
+        //     }
+
+        //     if (num1 >= str.length) {
+        //         return '';
+        //     }
+
+        //     if (num2 < 0) {
+        //         num2 = 1;
+        //     }
+
+        //     if (num2 === 0) {
+        //         return '';
+        //     }
+
+        //     if (num2 > str.length) {
+        //         num2 = str.length
+        //     }
+
+        //     if (num1 + num2 > str.length) {
+        //         num2 = str.length - 1;
+        //     }
+        //     const quantity = num1 + (num2 - 1);
+        //     let result = '';
+            
+        //     for (let i = num1; i <= quantity; i++) {
+        //         result += str[i];
+        //     }
+
+        //     return result;
+        // };
+
+        // console.log(substr('abba', -1, 100));   // abba
+        // console.log(substr('abba', 1, 10));     // bba
+        // console.log(substr('abba', 0, 4));      // abba
+        // console.log(substr('abba', 0, 5));      // abba
+
+        // JS функции. Объекты первого класса
+            // Через цикл
+        // const apply = (a, b, c) => {
+        //     let result = c;
+        //     for (let i = 0; i < a; i++) {
+        //         result = b(result);
+        //     }
+        //     return result;
+        // };
+            // Через рекурсию
+        // const apply = (a, b, c) => {
+        //     if (a === 0) {
+        //         return c;
+        //     } else {
+        //         return apply(a - 1, b, b(c));
+        //     }
+        // };
+        // console.log(apply(2, Math.sqrt, 16));
+
+        // JS функции. Лексическое окружение
+        // const reverse = (str) => {
+        //     const lastIndex = str.length - 1;
+        //     const iter = (index, acc) => {
+        //         if (index > lastIndex) {
+        //             return acc;
+        //         }
+        //         return iter(index + 1, `${str[index]}${acc}`);
+        //     };
+        //     return iter(0, '');
+        // };
+        // console.log(reverse('zza'));
+        
+        // JS функции. Возврат функций из функций
+        // const flip = (f) => {
+        //     const sum = (a, b) => f(b, a);
+        //     return sum;
+        // };
+        
+        // JS функции. Каррирование
+        // const True = (arg1) => {
+        //     return (arg2) => {
+        //         return arg1;
+        //     }
+        // };
+
+        // const False = (arg1) => {
+        //     return (arg2) => {
+        //         return arg2;
+        //     }
+        // };
+
+        // const If = (fn) => {
+        //     return fn;
+        // };
+
+        // console.log(If(False)('one')('two'));
+        
+        // JS функции. Испытания - Каррирование
+        const concat = (str1) => (str2) => (str3) => str1 + str2 + str3;
+        export default concat;
+
+    </script>
+</body>
+</html>
