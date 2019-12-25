@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // JS последовательности. Представление последовательностей
+        export const has = (list, num) => {
+            const stringList = listToString(list);
+            const stringNum = num.toString();
+
+            for (let i = 0; i <= stringList.length - 1; i += 1) {
+                if (stringList[i] === stringNum) {
+                return true;
+                }
+            }
+
+            return false;
+        };
+
+        export const has = (list, num) => {
+            if (isEmpty(list)) {
+                return false;
+            }
+
+            if (head(list) === num) {
+                return true;
+            }
+
+            return has(tail(list), num);
+        };
+
+        export const reverse = (list) => {
+            const iter = (list, acc) => {
+                if(isEmpty(list)) {
+                return acc;
+                }
+                return iter(tail(list), cons(`${head(list)}`, acc));
+            };
+            return iter(list, l());
+        };
+
+        export const concat = (list1, list2) => {
+            if(isEmpty(list1)) {
+                return list2;
+            }
+            return cons(head(list1), concat(tail(list1), list2));
+        };
+       
+
+    </script>
+</body>
+</html>

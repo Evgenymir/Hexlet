@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // JS Составные данные. Точки
+        const getQuadrant = (x, y) => {
+            if (x === 0 || y === 0) {
+                return null;
+            }
+            if (x > 0 && y > 0) {
+                return 1;
+            }
+            if (x < 0, y > 0) {
+                return 2;
+            }
+            if (x > 0, y < 0) {
+                return 4;
+            }
+            if (x < 0, y < 0) {
+                return 3;
+            }
+        };
+
+        const getSymmetricalPoint = (x, y) => {
+            return -x, -y;
+        };
+
+        console.log(getSymmetricalPoint(2, 4));
+            
+
+    </script>
+</body>
+</html>
